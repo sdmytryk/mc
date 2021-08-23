@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project#3 MedCollege</title>
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c1675e0a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__layout">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__wrap">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/logo-mobile.svg">
+                                <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="routs header__menu">
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Вступнику
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        День відкритих дверей
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спеціальності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Приймальна комісія
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Рейтингові списки вступників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Накази про зарахування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Студенту
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Палітра студентського життя
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад занять
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Державна кваліфікаційна атестація
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Електронний журнал успішності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Дистанційне навчання
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Силабуси
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Каталог вибіркових дисциплів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Працевлаштування випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Оплата навчання
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Випускнику
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Історія успіху
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спільнота випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Про фонд
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Події
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Документи для скачування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrap">
+                    <div class="header__btn-wrap header__menu">
+                        <button class="header__btn btn" id="registration">
+                            Вхід / Реєстрація
+                        </button>
+                    </div>
+                    <div class="header__lang">
+                        <form class="lang__form" action="#">
+                            <label for="language"></label>
+                            <select class="lang__select" name="select" id="language">
+                                <option value="УКР" selected>УКР</option>
+                                <option value="ENG">ENG</option>
+                              </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__border-img"></div>
+        <div class="wrapper">
+            <nav class="menu header__menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="index.html">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Освіта
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Післядипломна освіта
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Симуляційно-тренінговий центр
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="about.html">
+                            Медсестринська спільнота
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="news.html">
+                            Новини
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="timetable">
+            <div class="wrapper">
+                <div class="timetable__inner">
+                    <h1 class="timetable__title title">
+                        Розклад занять
+                    </h1>
+                    <div class="timetable__course">
+                        <div class="course__header">
+                            <h2 class="course__title title">
+                                226 Фармація, промислова фармація
+                            </h2>
+                        </div>
+                        <div class="timetable__accordion">
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                І курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                ІI курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                ІII курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timetable__course">
+                        <div class="course__header">
+                            <h2 class="course__title title">
+                                223 Медсестринство
+                            </h2>
+                        </div>
+                        <div class="timetable__accordion">
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                І курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                ІI курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                ІII курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    <div class="timetable__wrap">
+                                        <div class="accordion__header-inner">
+                                            <button class="accordion__button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="accordion__arrow" d="M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z" fill="black" fill-opacity="0.86"/>
+                                                </svg>
+                                                ІV курс
+                                            </button>
+                                            <a class="accordion__link" href="./css/nor.css" download>
+                                                <span>Завантажити розклад</span>
+                                                <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="timetable__table">
+                                    <colgroup class="timetable__table-group">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                       <thead class="timetable__table-head">
+                                        <tr class="timetable__table-row">
+                                            <th class="timetable__table-column">Пара</th>
+                                            <th class="timetable__table-column">Понеділок</th>
+                                            <th class="timetable__table-column">Вівторок</th>
+                                            <th class="timetable__table-column">Середа</th>
+                                            <th class="timetable__table-column">Четвер</th>
+                                            <th class="timetable__table-column">П’ятниця</th>
+                                        </tr>
+                                       </thead>
+                                       <tbody class="timetable__table-body">
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">0</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">1</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(1п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">2</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                           <tr class="timetable__table-row">
+                                               <td class="timetable__table-column">3</td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column"></td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                               <td class="timetable__table-column">Перша долік. допомога(2п)</td>
+                                           </tr>
+                                       </tbody>
+                                    </table>
+                                    <div class="timetable__table--mobile">
+                                        <ul class="table__tab-list">
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-monday">Пн</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a class="table__tab-link" href="#tab-tuesday">Вт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-wednesday">Ср</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-thursday">Чт</a>
+                                            </li>
+                                            <li class="table__tab-item">
+                                                <a  class="table__tab-link" href="#tab-friday">Пт</a>
+                                            </li>
+                                        </ul>
+                                        <table class="timetable__tab" id="tab-monday">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="timetable__tab-body">
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">0</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">1</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">2</td>
+                                                <td class="timetable__tab-column">Перша долік. допомога</td>
+                                            </tr>
+                                            <tr class="timetable__tab-row">
+                                                <td class="timetable__tab-column">3</td>
+                                                <td class="timetable__tab-column"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-tuesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-wednesday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-thursday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="timetable__tab" id="tab-friday">
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <tbody class="timetable__tab-body">
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">0</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">1</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(1п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">2</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                                <tr class="timetable__tab-row">
+                                                    <td class="timetable__tab-column">3</td>
+                                                    <td class="timetable__tab-column">Перша долік. допомога(2п)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="index.html">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Освіта
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Післядипломна освіта
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Симуляційно-тренінговий центр
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="about.html">
+                                Медсестринська спільнота
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="news.html">
+                                Новини
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__wrap">
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Вступнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    День відкритих дверей
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спеціальності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Приймальна комісія
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Рейтингові списки вступників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Накази про зарахування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Студенту
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="gallery.html">
+                                    Палітра студентського життя
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="timetable.html">
+                                    Розклад занять
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Розклад екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Державна кваліфікаційна атестація
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Електронний журнал успішності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Перелік питань до екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Дистанційне навчання
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Силабуси
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Каталог вибіркових дисциплів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Працевлаштування випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="payment.html">
+                                    Оплата навчання
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Випускнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Історія успіху
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спільнота випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Про фонд
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Події
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Документи для скачування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__contacts">
+                    <address class="address">
+                        <p>м. Львів, вул. Миколайчука, 9</p>
+                    </address>
+                    <address class="address">
+                        <a class="phone" href="tel:0322520305">(032) 252-03-05</a>
+                        <a class="phone" href="tel:0322587471">(032) 258-74-71</a>
+                        <a class="phone" href="tel:0322587395">(032) 258-73-95</a>
+                    </address>
+                    <div class="footer__socials">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2021 Львівський медичний фаховий коледж післядипломної освіти</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="registration-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Реєстрація
+                </h2>
+                <button class="modal__close" id="cancel" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" action="#">
+                        <p class="modal__entry">
+                            Вже маєте акаунт?
+                            <a class="modal__entry-link" id="entry" href="#">Увійти</a>
+                        </p>
+                        <input class="modal__input input" type="text" id="registration-name" name="name" placeholder="Ім’я">
+                        <label for="registration-name"></label>
+                        <input class="modal__input input" type="text" id="registration-surname" name="surname" placeholder="Прізвище">
+                        <label for="registration-surname"></label>
+                        <div class="modal__input-wrap">
+                            <input class="modal__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="modal__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                        </div>
+                        <input class="email modal__input input" type="email" id="registration-email" name="email" placeholder="Email">
+                        <label for="registration-email"></label>
+                        <input class="password modal__input input" type="password" id="registration-password" name="password" placeholder="Пароль">
+                        <label for="registration-password"></label>
+                        <button class="modal__btn btn" type="submit">
+                            Створити акаунт
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="entry-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Вхід
+                </h2>
+                <button class="modal__close" id="cancel-btn" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" action="#">
+                        <p class="modal__entry">
+                            Ще не маєте акаунт?
+                            <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>
+                        </p>
+                        <input class="email modal__input input" type="email" id="entry-email" name="email" placeholder="Email">
+                        <label for="entry-email"></label>
+                        <input class="password modal__input input" type="password" id="entry-password" name="password" placeholder="Пароль">
+                        <label for="entry-password"></label>
+                        <button class="modal__btn btn">
+                            Увійти
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        (function() {
+            let registrationButton = document.getElementById('registration');
+            let cancelButton = document.getElementById('cancel');
+            let cancelEntryButton = document.getElementById('cancel-btn');
+            let registrationDialog = document.getElementById('registration-dialog');
+            let entryButton = document.getElementById('entry');
+            let entryDialog = document.getElementById('entry-dialog');
+            let registrationLink = document.getElementById('registration-form');
+
+            // registration button opens a modal dialog
+            registrationButton.addEventListener('click', function() {
+                registrationDialog.showModal();
+            });
+                        
+            // regiatration cancel button closes the dialog box
+            cancelButton.addEventListener('click', function() {
+                registrationDialog.close();
+            });
+                        
+            // entry button close registration modal dialog and opens an entry modal dialog
+            entryButton.addEventListener('click', function() {
+                registrationDialog.close();
+                entryDialog.showModal();
+            });
+            
+            // entry cancel button closes the dialog box
+            cancelEntryButton.addEventListener('click', function() {
+                entryDialog.close();
+            });
+            
+            // registration link close entry modal dialog and opens a registration modal dialog
+            registrationLink.addEventListener('click', function() {
+                entryDialog.close();
+                registrationDialog.showModal();
+            });
+        })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header__burger').click(function(event){
+                $('.header__burger, .header__menu').toggleClass('active');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.timetable__table--mobile').tabs();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.timetable__group-link').tabs();
+        });
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion__header");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("accordion__header--active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

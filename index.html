@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="wrapper">
+      <div class="container">
+        <div class="header__layout">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__wrap">
+                <div class="logo">
+                    <a class="logo__link" href="index.html">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="./img/logo/logo_mobile.svg">
+                            <img class="log__img" src="./img/logo/logo.svg" alt="logo" >
+                        </picture>
+                    </a>
+                </div>
+                <div class="routs header__menu">
+                    <div class="routs__wrap">
+                        <button class="routs__list-btn">
+                            Вступнику
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <ul class="routs__list">
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    День відкритих дверей
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Спеціальності
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Приймальна комісія
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Рейтингові списки вступників
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Накази про зарахування
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="routs__wrap">
+                        <button class="routs__list-btn">
+                            Студенту
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <ul class="routs__list">
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Палітра студентського життя
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Розклад занять
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Розклад екзаменів
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Державна кваліфікаційна атестація
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Електронний журнал успішності
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Перелік питань до екзаменів
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Дистанційне навчання
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Перелік питань до екзаменів
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Силабуси
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Каталог вибіркових дисциплів
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Працевлаштування випускників
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Оплата навчання
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="routs__wrap">
+                        <button class="routs__list-btn">
+                            Випускнику
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <ul class="routs__list">
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Історія успіху
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Спільнота випускників
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Про фонд
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Події
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Документи для скачування
+                                </a>
+                            </li>
+                            <li class="routs__item">
+                                <a class="routs__link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrap">
+                <div class="header__btn-wrap header__menu">
+                    <button class="header__btn btn" id="registration">
+                        Вхід / Реєстрація
+                    </button>
+                </div>
+                <div class="header__lang">
+                    <form class="lang__form" action="#">
+                        <label for="language"></label>
+                        
+                        <select class="lang__select" name="select" id="language">
+                            <option value="УКР" selected>УКР</option>
+                            <option value="ENG">ENG</option>
+                            
+                          </select>
+                       
+                          
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__border-img"></div>
+    <div class="wrapper">
+      <div class="container">
+        <nav class="menu header__menu">
+            <ul class="header__menu-list menu__list">
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="index.html">
+                        Про нас
+                    </a>
+                </li>
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="#">
+                        Освіта
+                    </a>
+                </li>
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="#">
+                        Післядипломна освіта
+                    </a>
+                </li>
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="#">
+                        Симуляційно-тренінговий центр
+                    </a>
+                </li>
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="about.html">
+                        Медсестринська спільнота
+                    </a>
+                </li>
+                <li class="header__menu-item menu__list-item">
+                    <a class="header__menu-link menu__list-link" href="news.html">
+                        Новини
+                    </a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+</header>
+
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__info">
+        <h1 class="hero__title title">
+            Львівський медичний фаховий коледж післядипломної освіти
+        </h1>
+        <div class="hero__border"></div>
+        <div class="hero__info-wrap">
+            <img class="hero__info-img" src="./img/photo/virtual_tur.jpg"  alt="virtual_tur">
+            <p class="hero__info-text">Відвідай наш коледж, не виходячи з дому, просто натиснувши кнопку для перегляду.</p>
+        </div>
+        
+            <a class="hero__link-text" href="#"> 
+                Віртуальний тур
+            </a>
+        
+        <div class="hero__border hero__border-none"></div>
+    </div>
+    <div class="hero__img">
+      <picture>
+        <source media="(max-width: 375px)" srcset="./img/photo/college-mob.jpg">
+        <img class="college-photo" src="./img/photo/college.jpg" alt="college">
+    </picture>
+    </div>
+</div>
+</section>
+
+<section class="our_programs">
+  <div class="container">
+    <div class="row">
+      <h2  class="our_programs__title">Наші освітні програми</h2>
+      <div class="programs__cards">
+        <div class="programs__card">
+        
+            <table class="program__table">
+              <caption class="program__table-title title">Медсестринство</caption>
+               
+                <thead class="program__table-head">
+                    <tr class="program__table-row">
+                        <th class="program__table-column">Освітній ступінь</th>
+                        <th class="program__table-column program__table-column--mobile">Термін навчання</th>
+                    </tr>
+                </thead>
+                <tbody class="program__table-body">
+                    <tr class="program__table-row">
+                        <td class="program__table-column">Фаховий молодший бакалавр</td>
+                        <td class="program__table-column program__table-column--mobile">4 роки</td>
+                    </tr>
+                    <tr class="program__table-row">
+                        <td class="program__table-column">Бакалавр</td>
+                        <td class="program__table-column program__table-column--mobile"></td>
+                    </tr>
+                </tbody>
+            </table>
+           
+            <button class="program__card-btn">
+                Детальніше
+            </button>
+          
+        </div>
+        <div class="programs__card">
+      
+            <table class="program__table">
+                <caption class="program__table-title title">Фармація</caption>
+                <thead class="program__table-head">
+                    <tr class="program__table-row">
+                        <th class="program__table-column">Освітній ступінь</th>
+                        <th class="program__table-column program__table-column--mobile">Термін навчання</th>
+                    </tr>
+                </thead>
+                <tbody class="program__table-body">
+                    <tr class="program__table-row">
+                        <td class="program__table-column" rowspan="2">Фаховий молодший бакалавр</td>
+                        <td class="program__table-column program__table-column--mobile">3 роки</td>
+                    </tr>
+                    <tr class="program__table-row">
+                        <td class="program__table-column program__table-column--mobile"></td>
+                    </tr>
+                </tbody>
+            </table>
+           
+            <button class="program__card-btn btn-margin">
+                Детальніше
+            </button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="information">
+  <div class="container">
+    <div class="info__cards">
+      <div class="info__card">
+          <h3 class="info__card-title title">
+              Оплатити
+          </h3>
+          <p class="info__card-desc">
+              Тепер оплату можна здійснити безпосередньо на нашому сайті через сервіс LIQPAY
+          </p>
+          <a class="info__card-link" href="payment.html">
+              Переглянути<i class="fas fa-arrow-right"></i>
+          </a>
+      </div>
+      <div class="info__card">
+          <h3 class="info__card-title title">
+              Розклад
+          </h3>
+          <p class="info__card-desc">
+              Тут ви завжди зможете знайти розклад занять вашої групи та подивитись або скачати
+          </p>
+          <a class="info__card-link" href="timetable.html">
+              Переглянути<i class="fas fa-arrow-right"></i>
+          </a>
+      </div>
+      <div class="info__card">
+          <h3 class="info__card-title title">
+              Бібліотека
+          </h3>
+          <p class="info__card-desc">
+              Всі необхідні матеріали в одному місці, більше не потрібно носити з собою велетенські книги
+          </p>
+          <a class="info__card-link" href="#">
+              Переглянути<i class="fas fa-arrow-right"></i>
+          </a>
+      </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="slider">
+  <div class="container">
+     <div class="slider__items slide1">
+        <div class="slider__items-wrap">
+           <div class="slider__item">
+              <div class="slider__carousel">
+                 <div class="slider__carousel-inner">
+                    <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+                 </div>
+              </div>
+              <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>1</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+              <div class="slider__info">
+                 <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+                 <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+                 <button class="slider__btn btn">Детальніше</button>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="slider__items slide2">
+      <div class="slider__items-wrap">
+        <div class="slider__item">
+           <div class="slider__carousel">
+              <div class="slider__carousel-inner">
+                 <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+              </div>
+           </div>
+           <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>2</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+           <div class="slider__info">
+              <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+              <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+              <button class="slider__btn btn">Детальніше</button>
+           </div>
+        </div>
+     </div>
+     </div>
+     <div class="slider__items slide3">
+      <div class="slider__items-wrap">
+        <div class="slider__item">
+           <div class="slider__carousel">
+              <div class="slider__carousel-inner">
+                 <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+              </div>
+           </div>
+           <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>3</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+           <div class="slider__info">
+              <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+              <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+              <button class="slider__btn btn">Детальніше</button>
+           </div>
+        </div>
+     </div>
+     </div>
+     <div class="slider__items slide4">
+      <div class="slider__items-wrap">
+        <div class="slider__item">
+           <div class="slider__carousel">
+              <div class="slider__carousel-inner">
+                 <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+              </div>
+           </div>
+           <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>4</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+           <div class="slider__info">
+              <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+              <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+              <button class="slider__btn btn">Детальніше</button>
+           </div>
+        </div>
+     </div>
+     </div>
+     <div class="slider__items slide5">
+      <div class="slider__items-wrap">
+        <div class="slider__item">
+           <div class="slider__carousel">
+              <div class="slider__carousel-inner">
+                 <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+              </div>
+           </div>
+           <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>5</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+           <div class="slider__info">
+              <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+              <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+              <button class="slider__btn btn">Детальніше</button>
+           </div>
+        </div>
+     </div>
+           </div>
+        <div class="slider__items slide5">
+      <div class="slider__items-wrap">
+        <div class="slider__item">
+           <div class="slider__carousel">
+              <div class="slider__carousel-inner">
+                 <div class="slider__carousel-item"><img src="./img/photo/Image.jpg" alt="photo"></div>
+              </div>
+           </div>
+           <div class="slider__pagination"><button class="slider__control" onclick="plusSlides(-1)"><img src="./img/icons/left-big-arrow-active.svg" alt="arrow-left"></button><span>5</span>/6<button class="slider__control" onclick="plusSlides(1)"><img src="./img/icons/right-big-arrow-active.svg" alt="arrow-right"></button></div>
+           <div class="slider__info">
+              <h3 class="slider__title title">Симуляційно-тренінговий центр</h3>
+              <p class="slider__desc">У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. </p>
+              <button class="slider__btn btn">Детальніше</button>
+           </div>
+        </div>
+     </div>
+           </div>
+        </div>
+     </div>
+     <div class="slider__carousel-dots"><button class="slider__carousel-dot" type="button"></button><button class="slider__carousel-dot" type="button"></button><button class="slider__carousel-dot" type="button"></button><button class="slider__carousel-dot" type="button"></button><button class="slider__carousel-dot" type="button"></button></div>
+  </div>
+</section>
+
+<section class="tour">
+  <div class="container">
+    <div class="tour__inner">
+      <div class="tour__info">
+        <h3 class="tour__title title">
+            Віртуальний тур
+        </h3>
+        <p class="tour__desc">
+            Запрошуємо всіх охочих у віртуальну екскурсію по Львівському медичному коледжі післядипломної освіти.
+            За допомогою віртуального туру ви зможете відвідати коледж, не виходячи з дому.
+        </p>
+        <a class="tour__info-link" href="#">
+            Відвідати віртуальний тур
+        </a>
+    </div>
+    <div class="tour__img">
+      <picture>
+        <source media="(max-width: 375px)" srcset="./img/photo/cabinet_mob.jpg">
+        <img class="college-photo" src="./img/photo/cabinet.jpg" alt="college">
+    </picture>
+    </div>
+    </div>
+
+  </div>
+  
+</section>
+
+<section class="news">
+  <div class="container">
+     <h2 class="news__title title">Останні новини</h2>
+     <div class="news__articles">
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art1.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Метр медсестринської професії</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art2.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Базові реанімаційні заходи у дорослих</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art3.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Я вмію рятувати життя</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art4.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Наші нові муляжі</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art5.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Дотримуємось правил карантину</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        <article class="news__article">
+           <img class="news__article-img" src="./img/photo/art6.jpg" width="373" height="222" alt="photo">
+           <div class="news__article-info">
+              <h4 class="news__article-title title">Шановні першокурсники!</h4>
+              <p class="news__article-desc">Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.</p>
+              <a class="news__article-link" href="#">Читати більше</a>
+           </div>
+        </article>
+        
+     </div>
+     <button class="news__btn btn">Більше новини</button>
+  </div>
+</section>
+<section class="consultation">
+  <div class="wrapper">
+     <div class="consultation__info">
+        <h4 class="consultation__info-title title">Як стати нашим студентом?</h4>
+        <div class="consultation__info-cards">
+           <div class="consultation__info-card">
+              <img class="consultation__card-img" src="./img/icons/file.svg" alt="file">
+              <p class="consultation__card-title title">Обрати бажану спеціальність</p>
+           </div>
+           <div class="consultation__info-card">
+              <img class="consultation__card-img" src="./img/icons/email.svg" alt="email">
+              <p class="consultation__card-title title">Підписатись на оновлення</p>
+           </div>
+           <div class="consultation__info-card">
+              <img class="consultation__card-img" src="./img/icons/docs.svg" alt="docs">
+              <p class="consultation__card-title title"> Подати <br>документи</p>
+           </div>
+        </div>
+     </div>
+     <div class="consultation__form-inner">
+        <h4 class="consultation__form-title title">Отримати консультацію</h4>
+        <form class="consultation__form" action="#"><label for="consultation-name"></label><input class="consultation__form-input" id="consultation-name" type="text" name="name" placeholder="Ім’я"><label for="consultation-phone"></label><input class="consultation__form-input" id="consultation-phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефону"><button class="consultation__form-btn btn">Відправити заявку</button></form>
+     </div>
+  </div>
+</section>
+</main>
+<footer >
+  <div class="footer">
+  <div class="container">
+     <div class="footer__inner">
+        <nav class="footer__menu">
+           <ul class="footer__menu-list menu__list">
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="index.html">Про нас</a></li>
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="#">Освіта</a></li>
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="#">Післядипломна освіта</a></li>
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="#">Симуляційно-тренінговий центр</a></li>
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="about.html">Медсестринська спільнота</a></li>
+              <li class="footer__menu-item menu__list-item"><a class="footer__menu-link menu__list-link" href="news.html">Новини</a></li>
+           </ul>
+        </nav>
+        <div class="footer__border-img border-img"></div>
+        <div class="footer__wrap">
+           <div class="footer__content">
+              <ul class="footer__content-list">
+                 <li class="footer__content-item">Вступнику</li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">День відкритих дверей</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Спеціальності</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Приймальна комісія</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Рейтингові списки вступників</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Накази про зарахування</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Нормативні документи</a></li>
+              </ul>
+           </div>
+           <div class="footer__content">
+              <ul class="footer__content-list">
+                 <li class="footer__content-item">Студенту</li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="gallery.html">Палітра студентського життя</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="timetable.html">Розклад занять</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Розклад екзаменів</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Державна кваліфікаційна атестація</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Електронний журнал успішності</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Перелік питань до екзаменів</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Дистанційне навчання</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Силабуси</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Каталог вибіркових дисциплів</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Працевлаштування випускників</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Нормативні документи</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="payment.html">Оплата навчання</a></li>
+              </ul>
+           </div>
+           <div class="footer__content">
+              <ul class="footer__content-list">
+                 <li class="footer__content-item">Випускнику</li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Історія успіху</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Спільнота випускників</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Про фонд</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Події</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Документи для скачування</a></li>
+                 <li class="footer__content-item"><a class="footer__content-link" href="#">Нормативні документи</a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="footer__border-img border-img"></div>
+        <div class="footer__contacts">
+           <address class="address">
+              <p>м. Львів, вул. Миколайчука, 9</p>
+           </address>
+           <address class="address"><a class="phone" href="tel:0322520305">(032) 252-03-05</a><a class="phone" href="tel:0322587471">(032) 258-74-71</a><a class="phone" href="tel:0322587395">(032) 258-73-95</a></address>
+           <div class="footer__socials">
+              <ul class="footer__social-list">
+                 <li class="footer__social-item"><a class="footer__social-link" href="#"><img class="footer__social-img" src="./img/icons/facebook.svg" alt="facebook"></a></li>
+                 <li class="footer__social-item"><a class="footer__social-link" href="#"><img class="footer__social-img" src="./img/icons/instagram.svg" alt="instagram"></a></li>
+              </ul>
+           </div>
+        </div>
+        <div class="copyright">
+           <p>&copy; 2021 Львівський медичний фаховий коледж післядипломної освіти</p>
+        </div>
+     </div>
+  </div>
+  </div>
+</footer>
+
+<dialog id="registration-dialog">
+  <div class="modal">
+     <div class="modal__holder">
+        <h2 class="modal__title title">Реєстрація</h2>
+        <button class="modal__close" id="cancel" type="reset"><img class="modal__close-img" src="./img/icons/close.svg" alt="close"></button>
+        <div class="modal__content">
+           <form class="modal__registration" action="#">
+              <p class="modal__entry">Вже маєте акаунт?<a class="modal__entry-link" id="entry" href="#"> Увійти</a></p>
+              <input class="modal__input input" id="registration-name" type="text" name="name" placeholder="Ім’я"><label for="registration-name"></label><input class="modal__input input" id="registration-surname" type="text" name="surname" placeholder="Прізвище"><label for="registration-surname"></label>
+              <div class="modal__input-wrap"><input class="modal__input input" id="personal-number" type="number" min="10" max="10000" name="personal-number" placeholder="Персональний номер"><label class="modal__label label" for="personal-number">Персональний номер — номер залікової книжки</label></div>
+              <input class="email modal__input input" id="registration-email" type="email" name="email" placeholder="Email"><label for="registration-email"></label><input class="password modal__input input" id="registration-password" type="password" name="password" placeholder="Пароль"><label for="registration-password"></label><button class="modal__btn btn" type="submit">Створити акаунт</button>
+           </form>
+        </div>
+     </div>
+  </div>
+</dialog>
+<dialog id="entry-dialog">
+  <div class="modal">
+     <div class="modal__holder">
+        <h2 class="modal__title title">Вхід</h2>
+        <button class="modal__close" id="cancel-btn" type="reset"><img class="modal__close-img" src="./img/icons/close.svg" alt="close"></button>
+        <div class="modal__content">
+           <form class="modal__registration" action="#">
+              <p class="modal__entry">Ще не маєте акаунт?<a class="modal__entry-link" id="registration-form" href="#"> Зареєструватись</a></p>
+              <input class="email modal__input input" id="entry-email" type="email" name="email" placeholder="Email"><label for="entry-email"></label><input class="password modal__input input" id="entry-password" type="password" name="password" placeholder="Пароль"><label for="entry-password"></label><button class="modal__btn btn">Увійти</button>
+           </form>
+        </div>
+     </div>
+  </div>
+</dialog>
+<script>(function() {
+  let registrationButton = document.getElementById('registration');
+  let cancelButton = document.getElementById('cancel');
+  let cancelEntryButton = document.getElementById('cancel-btn');
+  let registrationDialog = document.getElementById('registration-dialog');
+  let entryButton = document.getElementById('entry');
+  let entryDialog = document.getElementById('entry-dialog');
+  let registrationLink = document.getElementById('registration-form');
+  // registration button opens a modal dialog
+  registrationButton.addEventListener('click', function() {
+  registrationDialog.showModal();
+  });
+  // regiatration cancel button closes the dialog box
+  cancelButton.addEventListener('click', function() {
+  registrationDialog.close();
+  });
+  // entry button close registration modal dialog and opens an entry modal dialog
+  entryButton.addEventListener('click', function() {
+  registrationDialog.close();
+  entryDialog.showModal();
+  });
+  // entry cancel button closes the dialog box
+  cancelEntryButton.addEventListener('click', function() {
+  entryDialog.close();
+  });
+  // registration link close entry modal dialog and opens a registration modal dialog
+  registrationLink.addEventListener('click', function() {
+  entryDialog.close();
+  registrationDialog.showModal();
+  });
+  })();
+</script><script src="https://code.jquery.com/jquery-1.12.4.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script>$(document).ready(function(){
+  $('.header__burger').click(function(event){
+  $('.header__burger, .header__menu').toggleClass('active');
+  });
+  });
+</script><script>$(document).ready(function(){
+  $('.routs__menu-list-btn').click(function(event){
+  $('.routs__menu-list-btn, .header__submenu').toggleClass('header__submenu--active');
+  });
+  });
+</script><script>let slideIndex = 1;
+  showSlides(slideIndex);
+  // Next/previous controls
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+  // Thumbnail image controls
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slider__items");
+  var controls = document.getElementsByClassName("slider__pagination");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  }
+  for (i = 0; i < controls.length; i++) {
+  controls[i].className = controls[i].className.replace(" slider__pagination--active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  controls[slideIndex-1].className += " slider__pagination--active";
+  }
+</script><script>let slideIndexSmall = 0;
+  showSlidesSmall();
+  function showSlidesSmall() {
+  const mediaQuery = window.matchMedia('(max-width: 992px)');
+  if (mediaQuery.matches) {
+  let i;
+  let slidesSmall = document.getElementsByClassName("slider__items");
+  var dots = document.getElementsByClassName("slider__carousel-dot");
+  for (i = 0; i < slidesSmall.length; i++) {
+  slidesSmall[i].style.display = "none";
+  }
+  slideIndexSmall++;
+  if (slideIndexSmall > slidesSmall.length) {slideIndexSmall = 1}
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" slider__carousel-dot--active", "");
+  }
+  slidesSmall[slideIndexSmall-1].style.display = "block";
+  dots[slideIndexSmall-1].className += " slider__carousel-dot--active";
+  setTimeout(showSlidesSmall, 4000); 
+  }
+  }
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>

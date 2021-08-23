@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project#3 MedCollege</title>
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c1675e0a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__layout">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__wrap">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/logo-mobile.svg">
+                                <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="routs header__menu">
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Вступнику
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        День відкритих дверей
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спеціальності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Приймальна комісія
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Рейтингові списки вступників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Накази про зарахування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Студенту
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Палітра студентського життя
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад занять
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Державна кваліфікаційна атестація
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Електронний журнал успішності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Дистанційне навчання
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Силабуси
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Каталог вибіркових дисциплів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Працевлаштування випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Оплата навчання
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
+                                Випускнику
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Історія успіху
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спільнота випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Про фонд
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Події
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Документи для скачування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrap">
+                    <div class="header__btn-wrap header__menu">
+                        <button class="header__btn btn" id="registration">
+                            Вхід / Реєстрація
+                        </button>
+                    </div>
+                    <div class="header__lang">
+                        <form class="lang__form" action="#">
+                            <label for="language"></label>
+                            <select class="lang__select" name="select" id="language">
+                                <option value="УКР" selected>УКР</option>
+                                <option value="ENG">ENG</option>
+                              </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__border-img"></div>
+        <div class="wrapper">
+            <nav class="menu header__menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="index.html">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Освіта
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Післядипломна освіта
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
+                            Симуляційно-тренінговий центр
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="about.html">
+                            Медсестринська спільнота
+                        </a>
+                    </li>
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="news.html">
+                            Новини
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="cost">
+            <div class="wrapper">
+                <div class="cost__inner">
+                    <h1 class="cost__title title">
+                        Вартість навчання за контрактом для вступників 2021 року
+                    </h1>
+                    <button class="cost__btn btn">
+                        Оплатити онлайн
+                    </button>
+                    <table class="cost__table">
+                        <colgroup class="cost__table-group">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead class="cost__table-head">
+                            <tr class="cost__table-row">
+                                <th class="cost__table-column">
+                                    Освітній ступінь
+                                </th>
+                                <th class="cost__table-column">
+                                    Спеціальність
+                                </th>
+                                <th class="cost__table-column">
+                                    Вартість <span>першого року</span> навчання (грн.)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="cost__table-body">
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    223 Медсестринство
+                                </td>
+                                <td class="cost__table-column">
+                                    18 400
+                                </td>
+                            </tr>
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Фаховий молодший бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    223 Медсестринство
+                                </td>
+                                <td class="cost__table-column">
+                                    14 600
+                                </td>
+                            </tr>
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Фаховий молодший бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    226 Фармація, промислова фармація
+                                </td>
+                                <td class="cost__table-column">
+                                    16 200
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cost__desc">
+                        <p class="cost__text">
+                            Оплата за навчання може проводитись один раз на рік (до початку навчання), двічі на рік (до початку кожного семестру).
+                        </p>
+                        <p class="cost__text cost__text--dark">
+                            Вступники з високими балами ЗНО можуть претендувати на стипендії, які повністю покривають їх вартість навчання. <br>
+                            Детальніше  про стипендії та ліцензовані обсяги прийому <a class="cost__text-link" href="#">за посиланням</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="wrapper">
+                <div class="payment__header">
+                    <h2 class="payment__title title">
+                        Оплата за навчання
+                    </h2>
+                    <ul class="payment__list">
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/mastercard.svg" alt="mastercard">
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/visa.svg" alt="visa">
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/privat24.svg" alt="privat24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment__body">
+                    <form class="payment__form" action="#">
+                        <input class="payment__input input" type="text" id="payment__name" name="name" placeholder="Ім’я">
+                        <label for="payment__name"></label>
+                        <input class="payment__input input" type="text" id="payment__surname" name="surname" placeholder="Прізвище">
+                        <label for="payment__surname"></label>
+                        <div class="payment__input-wrap">
+                            <input class="payment__input input" type="number" min="10" max="10000" id="payment__personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="payment__label label" for="payment__personal-number">Персональний номер — номер залікової книжки</label>
+                        </div>
+                        <div class="payment__specialty-wrap">
+                            <p class="payment__title-radio">Спеціальність :</p>
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio1"><input class="payment__radio-input" type="radio" id="specialty-radio1" name="specialty-radio" value="223 Медсестринство (бакалавр)" checked>
+                            223 Медсестринство (бакалавр)<span class="checkmark"></span></label>
+                            
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio2"><input class="payment__radio-input" type="radio" id="specialty-radio2" name="specialty-radio" value="223 Медсестринство (Фаховий молодший бакалавр)">
+                            223 Медсестринство (Фаховий молодший бакалавр)<span class="checkmark"></span></label>
+
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio3"><input class="payment__radio-input" type="radio" id="specialty-radio3" name="specialty-radio" value="226 Фармація, промислова фармація (Фаховий молодший бакалавр)">
+                            226 Фармація, промислова фармація (Фаховий молодший бакалавр)<span class="checkmark"></span></label>
+                        </div>
+                        <div class="payment__period-wrap">
+                            <p class="payment__title-radio">Оплата :</p>
+                            <label class="payment__period-label payment__radio-label" for="period-radio1"><input class="payment__radio-input" type="radio" id="period-radio1" name="period-radio" value="Рік">
+                            Рік<span class="checkmark"></span></label>
+
+                            <label class="payment__period-label payment__radio-label" for="period-radio2"><input class="payment__radio-input" type="radio" id="period-radio2" name="period-radio" value="Пів року" checked>Пів року<span class="checkmark"></span></label>
+                        </div>
+                        <div class="payment__sum">
+                            <p class="payment__sum-label">
+                                До оплати :
+                            </p>
+                            <p class="payment__sum-price">
+                                <span>9 200 грн.</span>
+                            </p>
+                        </div>
+                        <div class="payment__form-btns">
+                            <button class="payment__btn btn">
+                                Оплатити
+                            </button>
+                            <a class="liqpay__link" href="#">
+                                <img class="liqpay__img" src="./assets/liqpay.svg" alt="liqpay">
+                            </a>
+                        </div>
+                    </form>   
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="index.html">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Освіта
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Післядипломна освіта
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
+                                Симуляційно-тренінговий центр
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="about.html">
+                                Медсестринська спільнота
+                            </a>
+                        </li>
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="news.html">
+                                Новини
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__wrap">
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Вступнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    День відкритих дверей
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спеціальності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Приймальна комісія
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Рейтингові списки вступників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Накази про зарахування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Студенту
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="gallery.html">
+                                    Палітра студентського життя
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="timetable.html">
+                                    Розклад занять
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Розклад екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Державна кваліфікаційна атестація
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Електронний журнал успішності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Перелік питань до екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Дистанційне навчання
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Силабуси
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Каталог вибіркових дисциплів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Працевлаштування випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="payment.html">
+                                    Оплата навчання
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Випускнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Історія успіху
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спільнота випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Про фонд
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Події
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Документи для скачування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__contacts">
+                    <address class="address">
+                        <p>м. Львів, вул. Миколайчука, 9</p>
+                    </address>
+                    <address class="address">
+                        <a class="phone" href="tel:0322520305">(032) 252-03-05</a>
+                        <a class="phone" href="tel:0322587471">(032) 258-74-71</a>
+                        <a class="phone" href="tel:0322587395">(032) 258-73-95</a>
+                    </address>
+                    <div class="footer__socials">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2021 Львівський медичний фаховий коледж післядипломної освіти</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="registration-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Реєстрація
+                </h2>
+                <button class="modal__close" id="cancel" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" action="#">
+                        <p class="modal__entry">
+                            Вже маєте акаунт?
+                            <a class="modal__entry-link" id="entry" href="#">Увійти</a>
+                        </p>
+                        <input class="modal__input input" type="text" id="registration-name" name="name" placeholder="Ім’я">
+                        <label for="registration-name"></label>
+                        <input class="modal__input input" type="text" id="registration-surname" name="surname" placeholder="Прізвище">
+                        <label for="registration-surname"></label>
+                        <div class="modal__input-wrap">
+                            <input class="modal__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="modal__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                        </div>
+                        <input class="email modal__input input" type="email" id="registration-email" name="email" placeholder="Email">
+                        <label for="registration-email"></label>
+                        <input class="password modal__input input" type="password" id="registration-password" name="password" placeholder="Пароль">
+                        <label for="registration-password"></label>
+                        <button class="modal__btn btn" type="submit">
+                            Створити акаунт
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="entry-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Вхід
+                </h2>
+                <button class="modal__close" id="cancel-btn" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" action="#">
+                        <p class="modal__entry">
+                            Ще не маєте акаунт?
+                            <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>
+                        </p>
+                        <input class="email modal__input input" type="email" id="entry-email" name="email" placeholder="Email">
+                        <label for="entry-email"></label>
+                        <input class="password modal__input input" type="password" id="entry-password" name="password" placeholder="Пароль">
+                        <label for="entry-password"></label>
+                        <button class="modal__btn btn">
+                            Увійти
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        (function() {
+            let registrationButton = document.getElementById('registration');
+            let cancelButton = document.getElementById('cancel');
+            let cancelEntryButton = document.getElementById('cancel-btn');
+            let registrationDialog = document.getElementById('registration-dialog');
+            let entryButton = document.getElementById('entry');
+            let entryDialog = document.getElementById('entry-dialog');
+            let registrationLink = document.getElementById('registration-form');
+
+            // registration button opens a modal dialog
+            registrationButton.addEventListener('click', function() {
+                registrationDialog.showModal();
+            });
+                        
+            // regiatration cancel button closes the dialog box
+            cancelButton.addEventListener('click', function() {
+                registrationDialog.close();
+            });
+                        
+            // entry button close registration modal dialog and opens an entry modal dialog
+            entryButton.addEventListener('click', function() {
+                registrationDialog.close();
+                entryDialog.showModal();
+            });
+            
+            // entry cancel button closes the dialog box
+            cancelEntryButton.addEventListener('click', function() {
+                entryDialog.close();
+            });
+            
+            // registration link close entry modal dialog and opens a registration modal dialog
+            registrationLink.addEventListener('click', function() {
+                entryDialog.close();
+                registrationDialog.showModal();
+            });
+        })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header__burger').click(function(event){
+                $('.header__burger, .header__menu').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
